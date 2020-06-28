@@ -1,0 +1,68 @@
+1.Write a python prgm to find the max of three numbers.
+
+num1=int(input("enter 1st no:"))
+num2=int(input("enter 2nd no:"))
+num3=int(input("enter 3rd no:"))
+print("maximum:",max(num1,num2,num3))
+
+enter 1st no:3
+enter 2nd no:6
+enter 3rd no:9
+maximum: 9
+
+2.Write a python program to reverse a string.
+
+a=input("enter a string : ")
+print("reverse of string:",a[::-1])
+
+enter a string : sai
+reverse of string: ias
+
+3.Write a python function to check whether the number is prime or not.
+
+num = int(input("Enter a number: "))
+if num > 1:
+    for i in range(2,num):
+        if (num % i) == 0:
+            flag=1
+            break
+        else:
+            flag=0
+else:
+   print(num,"is not a prime number")
+if (flag==0):
+    print("prime number")
+else:
+    print('not a prime number')
+
+Enter a number: 6
+not a prime number
+
+4.Use try,except,else and finally block to check whether the number is palindrome or not.
+
+num = input('Enter any number : ')
+try:
+    val = int(num)
+    if num == str(num)[::-1]:
+        print('The given number is PALINDROME')
+    else:
+        print('The given number is NOT a palindrome')
+except ValueError:
+    print("That's not a valid number, Try Again !")
+finally:
+    print("this block is executed")
+
+Enter any number : s23
+That's not a valid number, Try Again !
+this block is executed
+
+5.Write a python function to find sum of squares of first n natural numbers.
+
+n=int(input("enter n value : "))
+sum=0
+for i in range(1,n+1):
+    sum=sum+(i**2)
+print("sum of natural numbers: ",sum)
+
+enter n value : 3
+sum of natural numbers:  14
