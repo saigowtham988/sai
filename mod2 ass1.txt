@@ -1,0 +1,75 @@
+
+1.Take two inputs and check whether they are equal or not
+
+a = int(input("Enter 1st no:"))
+b = int(input("Enter 2nd no:"))
+if a == b:
+    print ("Both nos are equal")
+else:
+    print ("Both nos are not equal")
+
+Enter 1st no:2
+Enter 2nd no:2
+Both nos are equal
+
+2.Take 3 inputs from user and check:all are equal any of two are not equal(use or or)
+
+num1=int(input("enter 1st no:"))
+num2=int(input("enter 2nd no:"))
+num3=int(input("enter 3rd no:"))
+if num1==num2==num3:
+    print("all are equal")
+elif num1==num2 or num2==num3 or num3==num1:
+    print("any of two nos are equal")
+
+enter 1st no:3
+enter 2nd no:5
+enter 3rd no:5
+any of two nos are equal
+
+3.Check whether the sum is greater than 5,less than 5 or equal to 5.
+
+a = int(input("Enter 1st no:"))
+b = int(input("Enter 2nd no:"))
+if a+b == 5:
+    print("equal to 5")
+elif a+b > 5:
+    print("greater than 5")
+else :
+    print("lesser than 5")
+
+Enter 1st no:1
+Enter 2nd no:2
+lesser than 5
+4.Suppose passing marks of a student is 35.Take two input of marks from user and check whether it is greatest than passing marks or not.
+
+def marks(a):
+    if a == 35:
+        print("marks is equal to pass marks")
+    elif a>35:
+        print ("Marks is greater than passing marks")
+    else:
+        print("marks is lesser than passing marks")
+marks1 = int(input("enter marks:"))
+marks(marks1)
+marks2 = int(input("enter marks:"))
+marks(marks2)
+
+enter marks:23
+marks is lesser than passing marks
+enter marks:48
+Marks is greater than passing marks
+
+5.Write a Python function to find the max of three numbers.
+
+def maximum(a,b,c):
+    return max(a,b,c)
+num1=int(input("enter 1st no:"))
+num2=int(input("enter 2nd no:"))
+num3=int(input("enter 3rd no:"))
+print("maximum:",maximum(num1,num2,num3))
+
+enter 1st no:2
+enter 2nd no:9
+enter 3rd no:3
+maximum: 9
