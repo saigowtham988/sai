@@ -1,0 +1,111 @@
+1.Write a Python program to find area of a circle using math function
+
+import math
+r = float(input("Enter radius: "))
+area = math.pi* r * r
+print(area)
+Enter radius: 4
+50.26548245743669
+
+2.Write a program to find Area of Regular Polygon using math function
+
+from math import tan,pi
+n = int(input("Input number of sides: "))
+len = float(input("Input the length of a side: "))
+area = n * (len ** 2) / (4 * tan(pi / n))
+print("The area of the polygon is: ",area)
+Input number of sides: 7
+Input the length of a side: 2
+The area of the polygon is:  14.535649776006357
+
+3.Write a program to find Area of a Segment of a Circle Formula using math function.
+
+import math
+def segarea(r,angle):
+    areaofsector = pi * (r * r) * (angle / 360) 
+    areaoftriangle = 1 / 2 *(r * r) *math.sin((angle * pi) / 180) 
+  
+    return areaofsector - areaoftriangle
+r=int(input("enter radius"))
+angle=int(input("enter angle"))
+print("area of minor segment=",segarea(r,angle))
+print("area of major segment=",segarea(r,(360-angle)))
+enter radius6
+enter angle120
+area of minor segment= 22.11065457495762
+area of major segment= 90.98668095427493
+
+4.Write a python program to shuffle list l1=[100,1,2,3,30,40,”hai”,”hello”].
+
+from random import shuffle
+l1 = [100,1,2,3,30,40,"hai","hello"]
+shuffle(l1)
+print(l1)
+[1, 3, 'hai', 30, 40, 2, 'hello', 100]
+
+4.Write a program to generate random numbers between 1,10000 and difference between each random number is 50.
+
+import random
+n = random.randint(1,10000)
+print(n)
+while(n<10000):
+    n=n+50
+    print(n)
+
+5.Write a python program by using math module to find
+a.sin 60
+
+import math
+val=math.sin(60)
+print("sin 60=",val)
+sin 60= -0.3048106211022167
+
+b.cos(pi)
+
+val=math.cos(pi)
+print("cos pi=",val)
+cos pi= -1.0
+
+c.tan(90)
+
+val=math.tan(90)
+print("tan 90=",val)
+tan 90= -1.995200412208242
+
+d.angle of sin(0.8660254037844386)
+
+print(math.sin((0.86602540378443860009)))
+0.7617599814162892
+
+e.5^8
+
+print(pow(5,8))
+390625
+
+f.Square root of 400
+
+print(math.sqrt(400))
+20.0
+
+g.The value of 5^e
+
+print(5**(math.e))
+79.43235916621322
+
+h.The value of Log(1024), base 2
+
+print(math.log2(1024))
+10.0
+
+i.The value of Log(1024), base 10
+
+print(math.log10(1024))
+3.010299956639812
+
+j.The Floor and Ceiling value of 23.56
+
+print(math.floor(23.56))
+print(math.ceil(23.56))
+
+23
+24
